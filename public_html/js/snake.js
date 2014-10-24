@@ -122,6 +122,19 @@ function setFoodPosition() {
     food.y = randomY;
 }
 
+/*-----------------------------------------------------------------------------
+ * Input Functions
+ *-----------------------------------------------------------------------------
+ */
+
 function keyboardHandler(event) {
     console.log(event);
+    
+    if(event.keyCode == "39") {
+        snakeDirection = "right";
+        
+    if(event.keyCode == "40") {
+        snakeDirection = "left";
+    }    
+    }
 }
